@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 from flask import Flask
 
@@ -12,13 +13,13 @@ def mainmenu():
 
     response = """
     <html>
-        <body bgcolor="{}">
+        <body bgcolor="{color}">
             <h1>Hello Cloud Native World</h1>
             <br>
             <a href="piper.html">Click Me!!!</a>
         </body>
     </html>
-    """.format(COLOR)
+    """.format(color=COLOR)
 
     return response
 
